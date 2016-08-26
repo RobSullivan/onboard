@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboard</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Waiting</h1>
+
+
+
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="large-8 medium-8 columns">
+
+        <!-- Grid Example -->
+
+
+
+      <hr />
+
+        <h5>What bus are you waiting for?</h5>
+
+
+
+        <form method="POST" action="results.html">
+
+
+          <div class="row">
+            <div class="large-4 columns">
+              <label>Select bus route</label>
+              <select>
+                <option value="415">415</option>
+                <option value="2">2</option>
+                <option value="432">432</option>
+              </select>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 columns">
+              <label>What bus stop you at?</label>
+              <select>
+                <option value="H">H</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+              <div class="large-4 columns">
+              <div class=".fieldset">
+              <label>Heading in or out of town*</label>
+              <input type="radio" name="direction" value="inbound" id="inboundTravel"><label for="inboundTravel">Inbound</label>
+              <input type="radio" name="direction" value="outbound" id="outboundTravel"><label for="outboundTravel">Outbound</label>
+            </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <label>Include location (privacy
+                 - browser)</label>
+              <input id="geolocation" type="checkbox"><label for="geolocation">Location</label>
+          </div>
+        </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <button type="submit" value="submit" class="button">Submit</button>
+            </div>
+          </div>
+
+
+        </form>
+
+
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
