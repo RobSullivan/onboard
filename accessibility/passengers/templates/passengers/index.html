@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space on board</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'passengers/style.css' %}">
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Is there space on this bus?</h1>
+        <h2>Advance notice from passengers there's space onboard.</h2>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="large-12 medium-12 columns">
+
+        <!-- Grid Example -->
+
+
+        <div class="row">
+          <div class="large-6 medium-6 columns">
+            <div class="primary callout">
+              <p><a href="{% url 'passengers:waiting' %}">I'm waiting</a></p>
+            </div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <div class="primary callout">
+              <p><a href="{% url 'passengers:onboard' %}">I'm onboard</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        </div>
+      </div>
+
+        <hr />
+  </body>
+</html>

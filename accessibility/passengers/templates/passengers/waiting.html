@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboard</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'passengers/style.css' %}">
+
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Waiting</h1>
+
+
+
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="large-8 medium-8 columns">
+
+        <!-- Grid Example -->
+
+
+
+      <hr />
+
+        <h5>What bus are you waiting for?</h5>
+
+
+
+        <form method="POST" action="results.html">
+
+
+          <div class="row">
+            <div class="large-4 columns">
+              <label>Select bus route</label>
+              <select>
+                <option value="415">415</option>
+                <option value="2">2</option>
+                <option value="432">432</option>
+              </select>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 columns">
+              <label>What bus stop you at?</label>
+              <select>
+                <option value="H">H</option>
+              </select>
+            </div>
+          </div>
+       
+          <div class="row">
+            <div class="large-4 columns">
+              <button type="submit" value="submit" class="button">Submit</button>
+            </div>
+          </div>
+
+
+        </form>
+
+
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
